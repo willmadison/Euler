@@ -40,12 +40,9 @@ var permutation Permutation = []int{0,1,2,3,4,5,6,7,8,9}
 var permutationError error = nil
 
 func main() {
-  fmt.Fprintf(os.Stdout, "Permutation %v is: %v\n", 0, permutation)
-
-  for i := 1; i <= 10 && permutationError == nil; i++ {
+  for i := 1; i <= 1000000 && permutationError == nil; i++ {
     permutationError = permutation.permute()
-    fmt.Fprintf(os.Stdout, "Permutation %v is: %v\n", i, permutation)
   }
 
-  fmt.Fprintf(os.Stdout, "The 10th permutation is: %v\n", permutation)
+  fmt.Fprintf(os.Stdout, "The 1,000,000th permutation is: %v\n", permutation)
 }
