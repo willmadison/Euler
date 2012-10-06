@@ -64,8 +64,6 @@ func main() {
     }
   }
 
-  fmt.Fprintf(os.Stdout, "The amicables we found: %#v\n", amicables)
-
   sum := 0
 
   for _,amicable := range(amicables) {
